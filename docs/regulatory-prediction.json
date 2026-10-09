@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-10-09T14:35:55Z",
+  "recorded_at_local": "2026-10-10T01:35:55+11:00",
+  "timezone": "Australia/Melbourne",
+  "record_type": "prospective_prediction",
+  "requested_by": "project_owner",
+  "prediction": "Official approval will likely involve complex regulatory requirements, independent testing and substantial evidence preparation, and may take much longer than building a working local tool.",
+  "basis": "Published Australian Digital ID accreditation requirements call for organisation and service evidence and independent assessments. A working face-comparison implementation alone does not satisfy that process.",
+  "uncertainty": "The applicant entity, exact approval route, submission date, regulator response and total elapsed time are not yet known. No quantitative approval deadline is predicted.",
+  "state_when_recorded": {
+    "implementation": "in_progress",
+    "regulatory_application": "not_submitted",
+    "approval": "not_granted",
+    "licence_application": "planned_for_2026-10-12_not_confirmed_started"
+  },
+  "evaluation": "Compare the prediction with dated evidence of required assessments, application completeness, regulator correspondence and approval outcome. Preserve this original record; append outcomes separately.",
+  "source": "https://www.digitalidsystem.gov.au/digital-id-accreditation"
+}
