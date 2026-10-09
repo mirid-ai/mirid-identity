@@ -1,0 +1,50 @@
+{
+  "timezone": "Australia/Melbourne",
+  "project": "Mirid Identity",
+  "jurisdiction": "Australia - awaiting applicant confirmation",
+  "milestones": [
+    {
+      "id": "build_authorised",
+      "date": "2026-10-10",
+      "status": "complete"
+    },
+    {
+      "id": "working_local_module",
+      "status": "complete",
+      "date": "2026-10-10",
+      "evidence": "build-verification.json"
+    },
+    {
+      "id": "mirid_integration",
+      "status": "complete",
+      "date": "2026-10-10",
+      "evidence": "native-verification.json"
+    },
+    {
+      "id": "open_source_release",
+      "status": "pending"
+    },
+    {
+      "id": "licence_application",
+      "planned_date": "2026-10-12",
+      "status": "planned",
+      "actual_date": null
+    },
+    {
+      "id": "complete_accreditation_application",
+      "status": "not_submitted",
+      "actual_date": null
+    },
+    {
+      "id": "accreditation_granted",
+      "status": "not_granted",
+      "actual_date": null
+    },
+    {
+      "id": "licence_received",
+      "status": "pending",
+      "actual_date": null
+    }
+  ],
+  "comparison_rule": "Report elapsed calendar and business days from each actual start; do not substitute publication or registration interest for accreditation."
+}

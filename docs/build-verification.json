@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-09T15:15:20.845067+00:00",
+  "component": "mirid-identity 0.1.0 final standalone package and Mirid source integration",
+  "test_command": "MIRID_IDENTITY_TEST_IMAGE=\"$PUBLIC_DOMAIN_FIXTURE\" python -m pytest tests -q",
+  "test_result": {
+    "passed": 69,
+    "failed": 0,
+    "skipped": 0,
+    "duration_seconds": 3.81,
+    "includes": {
+      "face_and_models": 18,
+      "cryptography_and_policy": 51
+    },
+    "verified_at_utc": "2026-10-09T15:15:51.933231+00:00"
+  },
+  "real_inference": {
+    "opencv_version": "4.11.0.86",
+    "backend": "OpenCV CPU",
+    "identical_image_cosine_similarity": 0.9999999,
+    "single_face_detection_and_embedding": "passed",
+    "blank_image_rejection": "passed",
+    "two_face_image_rejection": "passed",
+    "identity_verified": false,
+    "liveness": "not_assessed",
+    "document_authenticity": "not_assessed",
+    "threshold_calibration": "not_performed",
+    "fraud_resistance": "not_evaluated",
+    "accuracy_or_error_rate": "not_measured",
+    "note": "A same-image smoke test verifies the inference path only. It is not evidence of identity accuracy or spoof resistance."
+  },
+  "fixture": {
+    "kind": "Upstream public-domain image used for a local software smoke test",
+    "source_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/astronaut.png",
+    "licence_evidence_url": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.astronaut",
+    "upstream_attribution": "NASA, distributed by scikit-image as a public-domain sample",
+    "sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "included_in_source_or_wheel": false,
+    "biometric_identity_lookup_performed": false,
+    "location": "External public-domain fixture supplied through MIRID_IDENTITY_TEST_IMAGE; not included in the repository or artifacts."
+  },
+  "models": {
+    "source_revision": "47534e27c9851bb1128ccc0102f1145e27f23f98",
+    "verified_project_install": {
+      "ready": true,
+      "model_dir": "Project models directory (external to release artifacts)",
+      "models": [
+        {
+          "id": "opencv-yunet-2023mar",
+          "role": "detector",
+          "state": "ready",
+          "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+          "license": "MIT"
+        },
+        {
+          "id": "opencv-sface-2021dec",
+          "role": "recognizer",
+          "state": "ready",
+          "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79",
+          "license": "Apache-2.0"
+        }
+      ]
+    },
+    "verified_default_cache_install": {
+      "ready": true,
+      "model_dir": "Default per-user Mirid Identity model cache (external to release artifacts)",
+      "models": [
+        {
+          "id": "opencv-yunet-2023mar",
+          "role": "detector",
+          "state": "ready",
+          "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+          "license": "MIT"
+        },
+        {
+          "id": "opencv-sface-2021dec",
+          "role": "recognizer",
+          "state": "ready",
+          "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79",
+          "license": "Apache-2.0"
+        }
+      ]
+    }
+  },
+  "wheel": {
+    "filename": "mirid_identity-0.1.0-py3-none-any.whl",
+    "bytes": 34182,
+    "sha256": "57e0d1539e22a8a5d2d6f6969fe266d4d46651e24cf095879c6f1f69ed12122d",
+    "files": [
+      "mirid_identity/__init__.py",
+      "mirid_identity/cli.py",
+      "mirid_identity/crypto.py",
+      "mirid_identity/face.py",
+      "mirid_identity/model-manifest.json",
+      "mirid_identity/models.py",
+      "mirid_identity/policy.py",
+      "mirid_identity/model-licenses/sface-Apache-2.0.txt",
+      "mirid_identity/model-licenses/sface-upstream.txt",
+      "mirid_identity/model-licenses/yunet-MIT.txt",
+      "mirid_identity/model-licenses/yunet-upstream.txt",
+      "mirid_identity-0.1.0.dist-info/licenses/LICENSE",
+      "mirid_identity-0.1.0.dist-info/METADATA",
+      "mirid_identity-0.1.0.dist-info/WHEEL",
+      "mirid_identity-0.1.0.dist-info/entry_points.txt",
+      "mirid_identity-0.1.0.dist-info/top_level.txt",
+      "mirid_identity-0.1.0.dist-info/RECORD"
+    ],
+    "contains_model_manifest_and_licences": true,
+    "contains_model_weights_or_face_images": false,
+    "source_files_match_working_tree": true,
+    "license_expression": "Apache-2.0",
+    "source_url": "https://github.com/mirid-ai/mirid-identity",
+    "requirements": [
+      "cryptography<51,>=43",
+      "numpy<3,>=1.24; extra == \"face\"",
+      "Pillow<13,>=11; extra == \"face\"",
+      "opencv-python-headless==4.11.0.86; extra == \"face\"",
+      "pytest<10,>=8; extra == \"test\""
+    ],
+    "scope": "Standalone Python engine, CLI, protocol, model manifest and license notices. Frontend integration and documentation ship in the source archive."
+  },
+  "installed_cryptography": {
+    "version": "50.0.2",
+    "satisfies_wheel_requirement": true,
+    "installed_package_metadata_requirement": "cryptography<51,>=43"
+  },
+  "source_archive": {
+    "filename": "mirid_identity-0.1.0.tar.gz",
+    "bytes": 76031,
+    "sha256": "0488bdfc710d39ebc8b9f87c87ad12ca8ec74c3224c40aa4156b3093e6ae23bc",
+    "file_count": 49,
+    "files": [
+      "LICENSE",
+      "MANIFEST.in",
+      "PKG-INFO",
+      "README.md",
+      "docs/application-readiness.json",
+      "docs/application-readiness.md",
+      "docs/eligibility-route.md",
+      "docs/evaluation.md",
+      "docs/evidence-protocol.md",
+      "docs/linkedin-acceptance.md",
+      "docs/milestones.json",
+      "docs/native-verification.json",
+      "docs/registration.md",
+      "docs/regulatory-prediction.json",
+      "examples/policy.json",
+      "examples/trust.json",
+      "integrations/mirid/README.md",
+      "integrations/mirid/backend/app/identity_routes.py",
+      "integrations/mirid/backend/app/test_identity_boundary_review.py",
+      "integrations/mirid/backend/app/test_identity_routes.py",
+      "integrations/mirid/frontend/src/pages/IdentityPage.jsx",
+      "integrations/mirid/frontend/src/utils/identityVerification.js",
+      "integrations/mirid/frontend/src/utils/identityVerification.test.js",
+      "integrations/mirid/frontend/tests/e2e/fixtures/identity-smoke.html",
+      "integrations/mirid/frontend/tests/e2e/fixtures/identity-smoke.jsx",
+      "integrations/mirid/frontend/tests/e2e/identity.smoke.spec.js",
+      "pyproject.toml",
+      "setup.cfg",
+      "src/mirid_identity/__init__.py",
+      "src/mirid_identity/cli.py",
+      "src/mirid_identity/crypto.py",
+      "src/mirid_identity/face.py",
+      "src/mirid_identity/model-licenses/sface-Apache-2.0.txt",
+      "src/mirid_identity/model-licenses/sface-upstream.txt",
+      "src/mirid_identity/model-licenses/yunet-MIT.txt",
+      "src/mirid_identity/model-licenses/yunet-upstream.txt",
+      "src/mirid_identity/model-manifest.json",
+      "src/mirid_identity/models.py",
+      "src/mirid_identity/policy.py",
+      "src/mirid_identity.egg-info/PKG-INFO",
+      "src/mirid_identity.egg-info/SOURCES.txt",
+      "src/mirid_identity.egg-info/dependency_links.txt",
+      "src/mirid_identity.egg-info/entry_points.txt",
+      "src/mirid_identity.egg-info/requires.txt",
+      "src/mirid_identity.egg-info/top_level.txt",
+      "tests/test_crypto.py",
+      "tests/test_face.py",
+      "tests/test_models.py",
+      "tests/test_policy.py"
+    ],
+    "local_files_verified_byte_for_byte": 47,
+    "contains_package_tests_docs_examples_and_mirid_integration_source": true,
+    "contains_model_weights_or_face_images": false,
+    "contains_symlinks_or_devices": false,
+    "ownership_metadata": "uid/gid 0; empty user/group names; no local account identifier",
+    "verification_summary_excluded_to_avoid_circular_hash": true
+  },
+  "verification_scope": "Final wheel/source archive payloads, public-source hygiene, native report, integration mirror checks and a fresh full core test run.",
+  "previous_test_report_recorded_at_utc": "2026-10-09T15:01:11.588797+00:00",
+  "packaging": {
+    "backend": "setuptools.build_meta",
+    "dependency_installation_performed": false,
+    "build_frontend_note": "Used build_sdist and build_wheel backend functions directly; python-build frontend was unavailable.",
+    "source_archive_postprocessing": "Removed local-account tar owner metadata; source payload bytes were retained and verified.",
+    "core_tests_rerun_after_artifact_build": true
+  },
+  "mirid_integration": {
+    "mirrored_file_count": 9,
+    "all_files_match_native_sources": true,
+    "files": [
+      {
+        "file": "backend/app/identity_routes.py",
+        "sha256": "3f3210dbd27932d31dc6f350e3d1c31b3ecc9ea8ae426a9c801456a79ee27ded"
+      },
+      {
+        "file": "backend/app/test_identity_boundary_review.py",
+        "sha256": "0891b51f281bed7bd7b65df1596cb2bcd1a307a05e34a2e863819cacdedca16f"
+      },
+      {
+        "file": "backend/app/test_identity_routes.py",
+        "sha256": "9db801499828447d4cda02efc2db95e95210cae3e59a3e68188cf3f51d72cf1a"
+      },
+      {
+        "file": "frontend/src/pages/IdentityPage.jsx",
+        "sha256": "61992da309e08d1051372cd7ef23f7963bcf8c6020b1fad17e9bd9c287673159"
+      },
+      {
+        "file": "frontend/src/utils/identityVerification.js",
+        "sha256": "e5b997c67580f8a0a3bd91dccdf9109b8cfbf4e8b0e8de10b8eba98a6f2f40e3"
+      },
+      {
+        "file": "frontend/src/utils/identityVerification.test.js",
+        "sha256": "de8e3b8147598e1d2efa932b7c708a7e342c373ecaf4a1067cf6a6b6c07612cc"
+      },
+      {
+        "file": "frontend/tests/e2e/fixtures/identity-smoke.html",
+        "sha256": "1eb4f0030f2e004b1df5373f1ec61f4dcb43907676105ec4604b4f474d24b32e"
+      },
+      {
+        "file": "frontend/tests/e2e/fixtures/identity-smoke.jsx",
+        "sha256": "cf207aae10bc9cf807d49984e274dc300e6dc819c34bb714391e8276b752fbde"
+      },
+      {
+        "file": "frontend/tests/e2e/identity.smoke.spec.js",
+        "sha256": "04b790469ac493375f36b456598ee1303011def2a392d96fdcebba3a006fec63"
+      }
+    ],
+    "frontend_tests": {
+      "focused_unit_tests_passed": 5,
+      "browser_tests_passed": 2,
+      "browser_duration_seconds": 25.6,
+      "camera_test_source": "Synthetic browser camera stream, not a personal camera recording"
+    },
+    "frontend_build": {
+      "profile": "Linux API",
+      "result": "passed",
+      "release_artifact_policy": "passed",
+      "bundled_source_module_count": 182
+    },
+    "native_smoke_report": "native-verification.json",
+    "native_smoke_passed": true,
+    "native_smoke_images": "Generated blank 256x256 images; no personal face images",
+    "installed_native_binary_sha256": "2f1b4aca8104783848c1bbddf6d65ff30f66519917b44e1d33eaf786d7f205d0",
+    "native_binary_included_in_standalone_release": false
+  },
+  "public_source_hygiene": {
+    "candidate_file_count": 44,
+    "private_applicant_fields": "Unfilled/null in the public template",
+    "private_keys_images_model_weights_or_database_files_in_artifacts": false,
+    "machine_specific_home_paths_in_public_files": false,
+    "curly_quotation_marks_in_public_files": false,
+    "discovery_restrictions_found": false,
+    "initial_prediction_commit_preserved": "81feb89"
+  }
+}

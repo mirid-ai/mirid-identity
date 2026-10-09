@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-10-10",
+  "status": "preparation_only_not_submitted",
+  "project_name": "Mirid Identity",
+  "company_purpose_draft": "Software development, including an open-source facial identity verification package",
+  "potential_future_application": "Age verification for Mirid in Australia; production service scope is not yet defined",
+  "private_record_instruction": "Copy this template outside the public repository before filling applicant or account details",
+  "jurisdiction": {
+    "country": "Australia",
+    "state_or_territory": null,
+    "working_assumption": "Australian company proposed; registration state or territory not confirmed"
+  },
+  "requested_outcomes": {
+    "accc_digital_id_accreditation": null,
+    "dvs_identity_service_provider_access": null,
+    "independent_biometric_testing": null,
+    "agdis_participation": null
+  },
+  "applicant": {
+    "legal_entity_name": null,
+    "entity_type": null,
+    "abn_or_acn_if_applicable": null,
+    "registered_address": null,
+    "authorised_officer_name": null,
+    "authorised_officer_role": null,
+    "authority_to_act_evidence": null,
+    "contact_email": null,
+    "contact_phone": null
+  },
+  "service": {
+    "proposed_name": "Mirid Identity",
+    "operator": null,
+    "requested_accredited_service_type": null,
+    "requested_identity_proofing_level": null,
+    "intended_relying_parties": null,
+    "enrolment_and_document_source": null,
+    "biometric_testing_entity": null,
+    "dvs_gateway_provider": null,
+    "requested_conditions": null,
+    "production_data_environment": null
+  },
+  "evidence": {
+    "research_source_code": "../src/mirid_identity",
+    "research_technical_protocol": "evidence-protocol.md",
+    "research_evaluation_plan": "evaluation.md",
+    "statement_of_scope_and_applicability": null,
+    "privacy_impact_assessment": null,
+    "protective_security_assessment": null,
+    "fraud_assessment": null,
+    "accessibility_and_usability_assessment": null,
+    "penetration_testing_report": null,
+    "independent_biometric_performance_report": null,
+    "independent_presentation_attack_detection_report": null,
+    "face_and_factor_calibration_reports": null,
+    "target_risk_approval": null,
+    "consent_and_privacy_notice_for_intended_service": null,
+    "incident_and_complaints_procedures": null,
+    "retention_and_destruction_policy": null,
+    "appropriateness_and_associated_person_evidence": null,
+    "signed_applicant_declarations": null
+  },
+  "submission": {
+    "regulator_contacted_at": null,
+    "submission_channel_received_at": null,
+    "organisation_registration_submitted_at": null,
+    "service_registration_submitted_at": null,
+    "complete_accreditation_application_submitted_at": null,
+    "complete_accreditation_application_accepted_at": null,
+    "accreditation_decision_at": null,
+    "decision_reference": null,
+    "decision_outcome": null
+  },
+  "licence_comparison": {
+    "jurisdiction": null,
+    "licence_type": null,
+    "process_type": null,
+    "planned_start_date": "2026-10-12",
+    "actual_application_started_at": null,
+    "application_accepted_at": null,
+    "temporary_or_digital_licence_available_at": null,
+    "physical_licence_received_at": null
+  }
+}

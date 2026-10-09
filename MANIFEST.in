@@ -1,0 +1,10 @@
+include LICENSE README.md pyproject.toml
+recursive-include src/mirid_identity *.py *.json *.txt
+recursive-include tests *.py
+recursive-include examples *.json
+recursive-include docs *.md *.json
+recursive-include integrations *.py *.js *.jsx *.html *.md
+exclude docs/build-verification.json
+global-exclude *.onnx *.png *.jpg *.jpeg *.webp *.gif *.pyc
+prune models
+prune verification

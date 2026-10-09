@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "policy_id": "research-default",
+  "prior_probability": null,
+  "target_probability": null,
+  "face_calibration": null,
+  "factor_calibrations": [],
+  "require_quality": true,
+  "require_certified_liveness": true,
+  "require_identity_bound_factor": true,
+  "certified_liveness_factors": []
+}

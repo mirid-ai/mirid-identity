@@ -1,0 +1,120 @@
+{
+  "started": "2026-10-09T15:08:40.811740+00:00",
+  "passed": true,
+  "real_identity_api": true,
+  "personal_images_used": false,
+  "steps": [
+    "Native Tools menu opens Identity verification and reads real model status",
+    "Consent gates comparison; real face engine rejects generated blank images",
+    "Clear removes previews/results; API responses have no indexing restrictions"
+  ],
+  "status": {
+    "limits": {
+      "max_image_bytes": 8000000,
+      "max_pixels": 16000000
+    },
+    "calibration_configured": false,
+    "trust_configured": false,
+    "engine": "OpenCV YuNet + SFace",
+    "models": [
+      {
+        "state": "ready",
+        "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+        "id": "opencv-yunet-2023mar",
+        "role": "detector",
+        "license": "MIT"
+      },
+      {
+        "state": "ready",
+        "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79",
+        "id": "opencv-sface-2021dec",
+        "role": "recognizer",
+        "license": "Apache-2.0"
+      }
+    ],
+    "research_mode": true,
+    "protocol": "mirid-identity-v1",
+    "available": true,
+    "source_url": "https://github.com/mirid-ai/mirid-identity",
+    "models_ready": true
+  },
+  "result": {
+    "evidence_verified": 0,
+    "protocol": "mirid-identity-v1",
+    "decision": {
+      "face_likelihood_ratio": null,
+      "counted_factors": [],
+      "minimum_face_similarity": null,
+      "model_id": "opencv-sface-2021dec",
+      "log_posterior_odds": null,
+      "policy_id": "research-default",
+      "probability_interpretation": "conditional_model_lower_bound_if_uniform_calibration_holds",
+      "status": "insufficient_evidence",
+      "minimum_log_face_likelihood_ratio": null,
+      "minimum_face_likelihood_ratio": null,
+      "reasons": [
+        "face_quality_gate_failed",
+        "certified_liveness_missing",
+        "identity_bound_enrolment_evidence_missing",
+        "face_comparison_missing",
+        "independent_face_calibration_missing",
+        "documented_risk_policy_missing"
+      ],
+      "calibration_fingerprints": [],
+      "calibrated": false,
+      "ignored_factors": [],
+      "assurance": "research_only_not_accredited",
+      "posterior_probability": null
+    },
+    "face": {
+      "model_id": "opencv-sface-2021dec",
+      "experimental": true,
+      "liveness": "not_assessed",
+      "identity_verified": false,
+      "limitations": [
+        "Similarity is not an identity probability.",
+        "No operating threshold has been calibrated for this deployment.",
+        "A face comparison does not verify a document or establish live presence."
+      ],
+      "schema_version": 1,
+      "probe": {
+        "face_count": 0,
+        "quality": {
+          "passed": false,
+          "heuristic": true,
+          "reasons": [
+            "no_face"
+          ]
+        },
+        "width": 256,
+        "height": 256,
+        "analysis_width": 256,
+        "analysis_height": 256
+      },
+      "document_authenticity": "not_assessed",
+      "threshold": null,
+      "status": "inconclusive",
+      "metric": "cosine_similarity",
+      "detector_id": "opencv-yunet-2023mar",
+      "quality_passed": false,
+      "reference": {
+        "face_count": 0,
+        "quality": {
+          "passed": false,
+          "heuristic": true,
+          "reasons": [
+            "no_face"
+          ]
+        },
+        "width": 256,
+        "height": 256,
+        "analysis_width": 256,
+        "analysis_height": 256
+      },
+      "cosine_similarity": null,
+      "model_sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79"
+    },
+    "research_mode": true
+  },
+  "finished": "2026-10-09T15:09:13.311926+00:00"
+}

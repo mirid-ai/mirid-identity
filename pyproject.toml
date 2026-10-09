@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mirid-identity"
+version = "0.1.0"
+description = "Local, experimental facial comparison and identity evidence tools for Mirid"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["cryptography>=43,<51"]
+
+[project.urls]
+Source = "https://github.com/mirid-ai/mirid-identity"
+Issues = "https://github.com/mirid-ai/mirid-identity/issues"
+
+[project.optional-dependencies]
+face = ["numpy>=1.24,<3", "Pillow>=11,<13", "opencv-python-headless==4.11.0.86"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+mirid-identity = "mirid_identity.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mirid_identity = ["model-manifest.json", "model-licenses/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
