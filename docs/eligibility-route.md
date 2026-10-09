@@ -25,12 +25,17 @@ that developing verification software automatically requires accreditation.
 
 ## Company and product scope
 
-The proposed business is a software company developing an open-source facial
-identity verification package. A generic company name can hold this and future
-software projects without making its legal name the product name. Age
-verification for Mirid in Australia is a possible future application, rather
-than the company's whole purpose. The production verification service and any
-accreditation scope remain to be specified separately.
+The proposed business is a software company. Its defined service is Mirid's own
+age-verification layer, being developed for planned activation in Australia
+using facial comparison and trusted cryptographic identity and age evidence.
+A generic company name can hold this and other software projects without making
+its legal name the product name. The applicable accreditation scope and detailed
+production operating requirements still need to be specified.
+
+The current implementation compares faces and verifies session-bound identity
+assertions; it does not yet verify age. Age claims and issuer trust, calibration,
+liveness evidence and the age policy must be implemented and validated before
+production activation. No age threshold or accredited status is assumed here.
 
 Incorporation establishes the legal entity. Acceptance of its software or
 verification results by another platform requires that platform's agreement;

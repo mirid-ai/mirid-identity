@@ -28,6 +28,12 @@
       "evidence": "publication-record.json"
     },
     {
+      "id": "mirid_age_verification_activation",
+      "status": "not_enabled",
+      "actual_date": null,
+      "scope": "service-scope.md"
+    },
+    {
       "id": "licence_application",
       "planned_date": "2026-10-12",
       "status": "planned",

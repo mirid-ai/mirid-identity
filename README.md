@@ -1,14 +1,23 @@
 # Mirid Identity
 
-Open-source research software for local facial comparison and identity-bound
-cryptographic evidence. The aim is to accommodate legitimate changes in
-appearance while measuring the assurance of the complete verification process.
+Mirid Identity is the open-source age-verification layer being built for Mirid,
+with deployment planned for Australia once the service is ready. It combines
+local facial comparison with trusted identity and age evidence. The aim is to
+accommodate legitimate changes in appearance while meeting a defined assurance
+target.
 
 This first release compares two supplied face images using OpenCV YuNet and
 SFace, verifies signed evidence against configured trusted issuers, and can
 evaluate administrator-supplied calibrated policies. No empirical calibration or
 trusted issuer is supplied by default. It includes a native Mirid interface for image
 selection, camera capture, and signed-evidence transactions.
+
+Version 0.1.0 supplies the face-comparison and signed-evidence foundations.
+It does not yet issue age-verification decisions or enforce access in Mirid.
+Trusted age claims, holder binding, an age policy and validated decision criteria
+remain to be integrated. The current research result labels describe the
+validation state of these components, not the purpose of the product.
+See [the defined service scope](docs/service-scope.md).
 
 ## What the result means
 

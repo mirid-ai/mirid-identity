@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "mirid-identity"
 version = "0.1.0"
-description = "Local, experimental facial comparison and identity evidence tools for Mirid"
+description = "Mirid's age-verification layer in development, with local facial comparison and signed identity evidence"
 readme = "README.md"
 license = "Apache-2.0"
 license-files = ["LICENSE"]

@@ -4,7 +4,6 @@
   "status": "preparation_only_not_submitted",
   "project_name": "Mirid Identity",
   "company_purpose_draft": "Software development, including an open-source facial identity verification package",
-  "potential_future_application": "Age verification for Mirid in Australia; production service scope is not yet defined",
   "private_record_instruction": "Copy this template outside the public repository before filling applicant or account details",
   "jurisdiction": {
     "country": "Australia",
@@ -33,18 +32,24 @@
     "operator": null,
     "requested_accredited_service_type": null,
     "requested_identity_proofing_level": null,
-    "intended_relying_parties": null,
+    "intended_relying_parties": [
+      "Mirid"
+    ],
     "enrolment_and_document_source": null,
     "biometric_testing_entity": null,
     "dvs_gateway_provider": null,
     "requested_conditions": null,
-    "production_data_environment": null
+    "production_data_environment": null,
+    "purpose": "Mirid's own age-verification layer, planned for Australian activation when implemented and validated",
+    "age_requirement": null,
+    "production_age_enforcement_enabled": false,
+    "scope_document": "service-scope.md"
   },
   "evidence": {
     "research_source_code": "../src/mirid_identity",
     "research_technical_protocol": "evidence-protocol.md",
     "research_evaluation_plan": "evaluation.md",
-    "statement_of_scope_and_applicability": null,
+    "statement_of_scope_and_applicability": "service-scope.md (product scope only; formal assurance scope outstanding)",
     "privacy_impact_assessment": null,
     "protective_security_assessment": null,
     "fraud_assessment": null,
@@ -80,5 +85,6 @@
     "application_accepted_at": null,
     "temporary_or_digital_licence_available_at": null,
     "physical_licence_received_at": null
-  }
+  },
+  "defined_service": "Mirid's own age-verification layer, planned for Australian activation when implemented and validated"
 }

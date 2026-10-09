@@ -1,5 +1,10 @@
 # Mirid desktop integration
 
+Mirid Identity is being built as Mirid's own age-verification layer. This release
+integrates its face-comparison and signed-evidence components; age decisions and
+production access enforcement are not implemented yet. See
+[the service scope](../../docs/service-scope.md).
+
 The standalone Python package works without Mirid. This directory also carries
 the new Mirid interface and local API adapter as source, for integration with
 Mirid's React frontend and FastAPI service. It does not contain an entire Mirid
