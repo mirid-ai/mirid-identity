@@ -22,7 +22,10 @@
     },
     {
       "id": "open_source_release",
-      "status": "pending"
+      "status": "complete",
+      "date": "2026-10-10",
+      "verified_at_utc": "2026-10-09T15:19:11.208449+00:00",
+      "evidence": "publication-record.json"
     },
     {
       "id": "licence_application",

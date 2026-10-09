@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-10-09T15:19:11.208449+00:00",
+  "source": "https://github.com/mirid-ai/mirid-identity",
+  "release": "https://github.com/mirid-ai/mirid-identity/releases/tag/v0.1.0",
+  "release_commit": "97aef672c61022991ec6aff853e1befa693aa848",
+  "public_repository_http_status": 200,
+  "repository_robots_meta": [],
+  "repository_x_robots_tag": null,
+  "anonymous_wheel_download_sha256": "57e0d1539e22a8a5d2d6f6969fe266d4d46651e24cf095879c6f1f69ed12122d",
+  "accreditation_status": "not_applied_not_accredited",
+  "linkedin_acceptance": "not_agreed"
+}
